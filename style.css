@@ -60,7 +60,7 @@ body{
      transform: scale(1.2);
  }
 
- .legend{
+ .showcase{
      background-color: rgba(0, 0, 0, 0.1);
      padding: 5px 10px;
      border-radius: 5px;
@@ -69,19 +69,19 @@ body{
      display: flex;
      justify-content:space-between ;
  }
- .legend li{
+ .showcase li{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 10px;
  }
 
-legend li small{
+ .showcase li small{
     margin-left: 2px;
 }
 
 
-.legend .seat:not(.occupied):hover{
+.showcase .seat:not(.occupied):hover{
     cursor: default;
     transform: scale(1);
 }

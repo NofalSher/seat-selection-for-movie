@@ -24,7 +24,7 @@ container.addEventListener("click", e=> {
     
 
    // console.log("e.target"); //e.target tells us that at which seat had we clicked
-if(e.target.classList.contains("seat") &&
+if(e.target.classList.contains("seat") &&  
 !e.target.classList.contains("occupied")
 ){
     e.target.classList.toggle("selected"); // If we click for first time it will be selected and for next click it will be again de selected.
