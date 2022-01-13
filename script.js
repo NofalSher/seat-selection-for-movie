@@ -6,17 +6,8 @@ const count=document.getElementById("count");
 const total=document.getElementById("total");
 const movieSelect=document.getElementById("movie");
 
-const ticketPrice=+movieSelect.value;  // We have added a plus sign ahead of movieSelect to actually convert it in to number format from string format
-
-
+const ticketPrice=+ movieSelect.value;  // We have added a plus sign ahead of movieSelect to actually convert it in to number format from string format
   
-function updateSelectedCount(){
-    const selectedSeats=document.querySelectorAll(".row.seat.selected ")
-    const selectedSeatsCount=selectedSeats.length;
-    // console.log(selectedSeatsCount)
-    count.innerText=selectedSeatsCount;
-    total.innerText=selectedSeatsCount* ticketPrice;
-}
 
 container.addEventListener("click", e=> {  
     // We have made a function here. In ES6 basically we donot need to make a function 
@@ -32,3 +23,12 @@ if(e.target.classList.contains("seat") &&
 }
 
 })    //Initialize an event when it is clicked
+
+
+function updateSelectedCount(){
+    const selectedSeats=document.querySelectorAll(".row.seat.selected ")
+    const selectedSeatsCount=selectedSeats.length;
+    // console.log(selectedSeatsCount)
+    count.innerText=selectedSeatsCount;
+    total.innerText=selectedSeatsCount* ticketPrice;
+}
