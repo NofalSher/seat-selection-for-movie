@@ -10,11 +10,7 @@ const ticketPrice=+ movieSelect.value;  // We have added a plus sign ahead of mo
   
 
 container.addEventListener("click", e=> {  
-    // We have made a function here. In ES6 basically we donot need to make a function 
-// Rather we can write   (e)=>{}
-    
-
-   // console.log("e.target"); //e.target tells us that at which seat had we clicked
+  
 if(e.target.classList.contains("seat") &&  
 !e.target.classList.contains("occupied")
 ){
